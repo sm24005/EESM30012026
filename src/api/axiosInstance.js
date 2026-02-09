@@ -1,8 +1,9 @@
 import axios from 'axios';
 
+const apiUrl = import.meta.env.VITE_API_URL;
 
 const axiosInstance = axios.create({
-    baseURL: 'https://69878cd38bacd1d773edb3bf.mockapi.io',
+    baseURL: apiUrl,
     timeout: 10000,
     headers: {
         'Content-Type': 'application/json',

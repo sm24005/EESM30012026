@@ -1,6 +1,7 @@
 import { getClienteById, updateCliente } from '../../services/clienteService';
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+
 const EditClientePage = () => {
     const { id } = useParams();
     const navigate = useNavigate();
